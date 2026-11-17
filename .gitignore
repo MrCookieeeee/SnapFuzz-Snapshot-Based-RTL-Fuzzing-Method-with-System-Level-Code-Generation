@@ -1,0 +1,39 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Generated fuzzing results and traces
+/data/
+/run_time_data/
+/log/
+/figs/
+/elf.txt
+*.log
+*.vcd
+*.fst
+.coverage
+.coverage.*
+htmlcov/
+
+# Local toolchain and compiled build outputs
+build/
+dist/
+obj_dir/
+*.o
+*.a
+*.so
+*.so.*
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
