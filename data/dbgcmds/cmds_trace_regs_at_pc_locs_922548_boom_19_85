@@ -1,0 +1,62 @@
+until pc 0 0x80000000
+until pc 0 0x80075572
+reg 0 4
+until pc 0 0x800127a8
+reg 0 1
+until pc 0 0x800127b0
+reg 0 18
+reg 0 7
+until pc 0 0x800127c4
+reg 0 11
+until pc 0 0x800127d8
+reg 0 5
+reg 0 7
+until pc 0 0x800127e8
+reg 0 16
+until pc 0 0x800127f8
+reg 0 1
+reg 0 16
+until pc 0 0x800126b0
+reg 0 14
+until pc 0 0x800126b4
+reg 0 1
+reg 0 3
+until pc 0 0x800126d0
+reg 0 21
+until pc 0 0x800126d4
+reg 0 5
+reg 0 3
+until pc 0 0x80012700
+reg 0 18
+until pc 0 0x80012730
+reg 0 15
+until pc 0 0x80012748
+reg 0 7
+until pc 0 0x8006c958
+reg 0
+freg 0 ft0
+freg 0 ft1
+freg 0 ft2
+freg 0 ft3
+freg 0 ft4
+freg 0 ft5
+reg 0 mstatus
+reg 0 mie
+reg 0 mtvec
+reg 0 mscratch
+reg 0 mepc
+reg 0 mcause
+reg 0 minstret
+reg 0 medeleg
+reg 0 mideleg
+reg 0 sstatus
+reg 0 sie
+reg 0 stvec
+reg 0 sscratch
+reg 0 sepc
+reg 0 scause
+reg 0 satp
+reg 0 fflags
+reg 0 frm
+reg 0 fcsr
+q

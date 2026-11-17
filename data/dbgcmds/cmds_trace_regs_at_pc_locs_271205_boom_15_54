@@ -1,0 +1,39 @@
+until pc 0 0x80000000
+until pc 0 0x8001cd00
+reg 0 6
+reg 0 10
+until pc 0 0x8001cd18
+reg 0 2
+until pc 0 0x8001cd30
+reg 0 9
+until pc 0 0x8001cd4c
+reg 0 7
+until pc 0 0x8001cd68
+reg 0 8
+until pc 0 0x8001cd84
+reg 0 18
+until pc 0 0x8001cda4
+reg 0 4
+until pc 0 0x8003f008
+reg 0
+freg 0 ft0
+reg 0 mstatus
+reg 0 mie
+reg 0 mtvec
+reg 0 mscratch
+reg 0 mepc
+reg 0 mcause
+reg 0 minstret
+reg 0 medeleg
+reg 0 mideleg
+reg 0 sstatus
+reg 0 sie
+reg 0 stvec
+reg 0 sscratch
+reg 0 sepc
+reg 0 scause
+reg 0 satp
+reg 0 fflags
+reg 0 frm
+reg 0 fcsr
+q

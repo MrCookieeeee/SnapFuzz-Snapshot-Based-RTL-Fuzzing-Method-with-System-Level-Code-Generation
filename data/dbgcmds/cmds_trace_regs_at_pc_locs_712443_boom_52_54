@@ -1,0 +1,164 @@
+until pc 0 0x80000000
+until pc 0 0x80050380
+reg 0 13
+until pc 0 0x80050388
+reg 0 8
+reg 0 12
+until pc 0 0x8005038c
+reg 0 11
+reg 0 6
+until pc 0 0x800503b0
+reg 0 10
+until pc 0 0x800503c6
+reg 0 9
+until pc 0 0x800503ce
+reg 0 13
+reg 0 2
+until pc 0 0x8004ac30
+reg 0 9
+reg 0 6
+until pc 0 0x80049f00
+reg 0 1
+until pc 0 0x80077da4
+reg 0 1
+reg 0 16
+until pc 0 0x80077dac
+reg 0 9
+reg 0 0
+until pc 0 0x80077db8
+reg 0 9
+until pc 0 0x80077dc0
+reg 0 16
+reg 0 1
+until pc 0 0x8007809c
+reg 0 19
+until pc 0 0x8007dc70
+reg 0 9
+until pc 0 0x8007dc8c
+reg 0 14
+until pc 0 0x8007dcb2
+reg 0 9
+until pc 0 0x8007dcbe
+reg 0 9
+reg 0 10
+until pc 0 0x8007dcd6
+reg 0 13
+until pc 0 0x80002a6c
+reg 0 10
+reg 0 13
+until pc 0 0x80002d88
+reg 0 4
+until pc 0 0x80034bfc
+reg 0 10
+until pc 0 0x80034c14
+reg 0 10
+until pc 0 0x80034c30
+reg 0 19
+reg 0 6
+until pc 0 0x80033fe4
+reg 0 10
+until pc 0 0x8003400c
+reg 0 14
+until pc 0 0x80034024
+reg 0 14
+until pc 0 0x80071198
+reg 0 13
+until pc 0 0x800711ac
+reg 0 14
+until pc 0 0x800711c8
+reg 0 10
+reg 0 10
+until pc 0 0x800711e8
+reg 0 1
+until pc 0 0x80071224
+reg 0 19
+until pc 0 0x80071240
+reg 0 13
+until pc 0 0x80071294
+reg 0 1
+until pc 0 0x800712a4
+reg 0 9
+until pc 0 0x800712b8
+reg 0 14
+reg 0 19
+until pc 0 0x800712c4
+reg 0 9
+until pc 0 0x8002e69c
+reg 0 19
+until pc 0 0x80061d48
+reg 0 1
+until pc 0 0x80061d54
+reg 0 9
+reg 0 1
+until pc 0 0x80062c00
+reg 0 14
+until pc 0 0x80062c10
+reg 0 10
+reg 0 14
+until pc 0 0x80062c20
+reg 0 14
+until pc 0 0x80062c2c
+reg 0 16
+reg 0 10
+until pc 0 0x80062c34
+reg 0 1
+reg 0 9
+until pc 0 0x80062c44
+reg 0 1
+reg 0 1
+until pc 0 0x80062c50
+reg 0 9
+until pc 0 0x80062c70
+reg 0 9
+until pc 0 0x80062c88
+reg 0 16
+until pc 0 0x80062ca0
+reg 0 19
+until pc 0 0x800a6220
+reg 0 1
+reg 0 9
+until pc 0 0x800a6228
+reg 0 14
+reg 0 14
+until pc 0 0x800a56a8
+reg 0 14
+until pc 0 0x800a56c4
+reg 0 14
+until pc 0 0x800a56ec
+reg 0 9
+until pc 0 0x800a56f0
+reg 0 19
+reg 0 9
+until pc 0 0x800a5710
+reg 0 14
+until pc 0 0x8007de50
+reg 0 14
+until pc 0 0x80087f4c
+reg 0
+freg 0 ft0
+freg 0 ft1
+freg 0 ft2
+freg 0 ft3
+freg 0 ft4
+freg 0 ft5
+freg 0 ft6
+reg 0 mstatus
+reg 0 mie
+reg 0 mtvec
+reg 0 mscratch
+reg 0 mepc
+reg 0 mcause
+reg 0 minstret
+reg 0 medeleg
+reg 0 mideleg
+reg 0 sstatus
+reg 0 sie
+reg 0 stvec
+reg 0 sscratch
+reg 0 sepc
+reg 0 scause
+reg 0 satp
+reg 0 fflags
+reg 0 frm
+reg 0 fcsr
+q

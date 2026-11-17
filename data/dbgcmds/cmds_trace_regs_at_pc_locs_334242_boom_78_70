@@ -1,0 +1,84 @@
+until pc 0 0x80000000
+until pc 0 0x8004a9c0
+reg 0 18
+reg 0 7
+until pc 0 0x8004a9c8
+reg 0 5
+reg 0 18
+until pc 0 0x8004a9cc
+reg 0 0
+reg 0 0
+until pc 0 0x8004a9e8
+reg 0 7
+reg 0 11
+until pc 0 0x8004a9f4
+reg 0 5
+until pc 0 0x8004aa20
+reg 0 17
+until pc 0 0x8004aa28
+reg 0 2
+reg 0 10
+until pc 0 0x8004aa44
+reg 0 18
+reg 0 10
+until pc 0 0x8004a898
+reg 0 12
+until pc 0 0x8004a8ac
+reg 0 17
+until pc 0 0x8000f1c4
+reg 0 8
+reg 0 12
+until pc 0 0x8000f1c8
+reg 0 14
+reg 0 8
+until pc 0 0x8000f1cc
+reg 0 2
+reg 0 0
+until pc 0 0x8000f1ec
+reg 0 10
+until pc 0 0x8000f200
+reg 0 17
+until pc 0 0x8000f208
+reg 0 10
+reg 0 2
+until pc 0 0x8005108e
+reg 0 17
+until pc 0 0x800510ae
+reg 0 10
+until pc 0 0x800510b6
+reg 0 17
+reg 0 18
+until pc 0 0x800010f8
+reg 0
+freg 0 ft0
+freg 0 ft1
+freg 0 ft2
+freg 0 ft3
+freg 0 ft4
+freg 0 ft5
+freg 0 ft6
+freg 0 ft7
+freg 0 fs0
+freg 0 fs1
+freg 0 fa0
+freg 0 fa1
+reg 0 mstatus
+reg 0 mie
+reg 0 mtvec
+reg 0 mscratch
+reg 0 mepc
+reg 0 mcause
+reg 0 minstret
+reg 0 medeleg
+reg 0 mideleg
+reg 0 sstatus
+reg 0 sie
+reg 0 stvec
+reg 0 sscratch
+reg 0 sepc
+reg 0 scause
+reg 0 satp
+reg 0 fflags
+reg 0 frm
+reg 0 fcsr
+q

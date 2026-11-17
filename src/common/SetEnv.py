@@ -1,0 +1,54 @@
+import os
+from params.runparams import DO_ASSERT
+
+# Replace the environment with new values.
+# sram_taintfile: path relative to snapfuzzdir
+# bootrom_elf: path relative to snapfuzzdir
+def setup_sim_env(sram_elf, bootrom_elf, tracefile, simtime, snapfuzzdir, coveragefile, verbose: bool = True):
+    if DO_ASSERT:
+        assert isinstance(sram_elf, str)
+        assert isinstance(bootrom_elf, str) or bootrom_elf is None
+        assert isinstance(tracefile, str) or tracefile is None
+        assert isinstance(simtime, int)
+        assert isinstance(coveragefile, str) or coveragefile is None
+
+    # Make all paths absolute.
+    # bootrom_elf = /dev/null 暂时设置成这样
+    if bootrom_elf:
+        bootrom_elf = os.path.join(snapfuzzdir, bootrom_elf)
+
+    # Copy the OS environment.
+    my_env = os.environ.copy()
+
+    # Replace the environment simlen.
+    my_env["SIMLEN"] = str(simtime)
+
+    if tracefile:
+        my_env["TRACEFILE"] = tracefile
+    else:
+        my_env.pop("TRACEFILE", None) # Remove TRACEFILE if it exists
+
+    if coveragefile:
+        my_env["COVERAGEFILE"] = coveragefile
+        # For Modelsim
+        my_env["MODELSIM_VLOG_COVERFLAG"] = '+cover'
+        my_env["MODELSIM_VSIM_COVERFLAG"] = '-coverage'
+        my_env["MODELSIM_VSIM_COVERPATH"] = coveragefile
+    else:
+        my_env.pop("COVERAGEFILE", None)
+        # For Modelsim
+        my_env.pop("MODELSIM_VLOG_COVERFLAG", None)
+        my_env.pop("MODELSIM_VSIM_COVERFLAG", None)
+        my_env.pop("MODELSIM_VSIM_COVERPATH", None)
+
+    # Replace the environment ELF paths.
+    my_env["SIMSRAMELF"] = sram_elf
+    if bootrom_elf:
+        my_env["SIMROMELF"] = bootrom_elf
+    else:
+        my_env["SIMROMELF"] = sram_elf
+
+    if verbose:
+        print('setting SIMSRAMELF to {}'.format(my_env["SIMSRAMELF"]))
+        print('setting SIMROMELF to {}'.format(my_env["SIMROMELF"]))
+    return my_env
