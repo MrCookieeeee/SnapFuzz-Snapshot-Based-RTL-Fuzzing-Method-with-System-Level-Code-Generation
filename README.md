@@ -76,7 +76,7 @@ The harness must accept `SIMSRAMELF`, `SIMROMELF`, and `SIMLEN`, report `Found a
 
 ## Setup and execution
 
-Create a Conda environment, install the Python dependency, and activate SnapFuzz:
+Please download the [RISC-V GNU toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain/releases) (the RV64 Newlib/`riscv64-unknown-elf` build) and [Spike](https://github.com/riscv-software-src/riscv-isa-sim), then add them in env.sh.
 
 ```bash
 conda create --name SnapFuzz --channel conda-forge python=3.13 pip
@@ -100,16 +100,6 @@ python3 src/do_fuzz_design.py rocket
 Generation-only mode is enabled by default and saves final ELFs in `data/`. It retains Spike resolution and requires Spike and RISC-V binutils. It skips RTL profiling, warmup, execution, and coverage updates, using Spike's supported exception-delegation mask during generation.
 
 To execute the generated programs on RTL and collect coverage, install the simulators and Verilator 5.006, then run:
-
-```bash
-python3 src/do_fuzz_design.py boom --generate-only False
-```
-
-The interface is:
-
-```text
-python3 src/do_fuzz_design.py <design_name> [<tolerate_some_bug>] [--no-update] [--generate-only [True|False]]
-```
 
 | Argument | Behavior |
 | --- | --- |

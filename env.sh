@@ -4,10 +4,10 @@ export SNAPFUZZ_DIR="$myroot"
 export SNAPFUZZ_RISCV_BITWIDTH=64
 
 # Riscv Tools
-export PATH="$SNAPFUZZ_DIR/riscv/bin":$PATH
+export PATH="set your own path":$PATH
 
 # verilator 5.006
-export PATH="${SNAPFUZZ_VERILATOR_BIN:-$HOME/Tools/verilator-5.006/install/bin}:$PATH"
+export PATH="set your own path:$PATH"
 
 echo "SnapFuzz root: $SNAPFUZZ_DIR"
 export PYTHONPATH="$SNAPFUZZ_DIR:$SNAPFUZZ_DIR/src:$PYTHONPATH"
